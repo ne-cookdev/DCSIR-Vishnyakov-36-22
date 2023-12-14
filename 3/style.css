@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 10px;
+}
+
+.logo_wrapper {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.logo_wrapper > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+    padding: 15px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition: 0.3s;
+}
+
+.logo_wrapper > a:hover {
+    background: #eee;
+    transition: 0.3s;
+}
+
+.logo_wrapper > a:visited {
+    color: #333;
+}
+
+.absolute_preview {
+    width: 200px;
+    height: 50px;
+    background: #ddd;
+    position: absolute;
+    z-index: -1;
+    top: 75px;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    position: relative;
+}
+
+nav > ol {
+    display: block;
+    margin-bottom: 80px;
+}
+
+nav > ol > ul {
+    list-style: "\231B";
+}
+
+nav > ol > li > a {
+    text-decoration: none;
+}
+
+h3 {
+    margin-top: 50px;
+}
+
+a:active {
+    color: burlywood;
+}
+
+a:visited {
+    color: brown;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 ~ p {
+    color: #333;
+    padding: 5px;
+}
+
+.float_section {
+    display: flex;
+    flex-direction: column;
+}
+
+.float_section > div {
+    display: flex;
+    justify-content: center;
+}
+
+.float_section > div > div {
+    width: 30%;
+    margin: 0 10px;
+}
+
+footer > address {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

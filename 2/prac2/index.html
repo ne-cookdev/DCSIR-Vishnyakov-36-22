@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Первая страница</title>
+    <link rel="icon" href="../images/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section class="ham_menu">
+                <div class="ham_menu_lines"></div>
+                <div class="ham_menu_lines"></div>
+                <div class="ham_menu_lines"></div>
+            </section>
+            <section id="open_menu_body_id" class="open_menu_body open_menu_body_closed">
+                <a href="#form_text_sec">Контент</a>
+                <a href="#lists_sec">Список</a>
+                <a href="#welcome_section_id">
+                    <img src="../images/Your%20logo.png" alt="" height="50px" style="position: relative;">
+                </a>
+                <a href="#pics_sec">Картинки</a>
+                <a href="#contacts">Контакты</a>
+            </section>
+        </nav>
+        <div id="body_tinter" class="body_tint"></div>
+    </header>
+    <main>
+        <!-- Приветствующая секция -->
+        <section id="welcome_section_id" class="welcome_section">
+            <h1>LOREM IPSUM</h1>
+            <h2>dolor sit amet</h2>
+        </section>
+        <!-- Секция с форматированным текстом -->
+        <section id="form_text_sec" class="format_text_section">
+            <div class="format_text_block">
+                <div style="width: 40%; display: flex; justify-content: center;">
+                    <h3 style="font-size: 200px; margin: 0; color: rgb(230, 230, 230, 0.7); font-weight: 400;">m</h3>
+                </div>
+                <div class="format_text_inner_block">
+                    <h2 style="text-align: center;">Подзаголовок уровня 2</h2>
+                    <p>Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit.</b> Ducimus <strong><i>molestias</i></strong> voluptates dignissimos quidem exercitationem similique quibusdam harum, <em>voluptas eaque placeat sunt esse sequi</em> vero odit ipsa quos voluptatem <u>iste voluptatibus.</u></p>
+                </div>
+            </div>
+            <div>
+                <div class="format_text_inner_block">
+                    <h3 style="text-align: center;">Подзаголовок уровня <sub>3</sub></h3>
+                    <p>Lorem ipsum dolor sit amet, <sup>consectetur adipisicing</sup> elit.<br> Perferendis vitae quas, accusamus <cite>incidunt, nam sequi,</cite> ducimus <span>nesciunt in temporibus eveniet officiis molestias.</span> Consequatur sint officiis laudantium reiciendis enim, dolores! Dolor.</p>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sequi sunt officiis doloribus, inventore eius quisquam velit! <abbr title="Lorem ipsum dolor sit amet">Aperiam necessitatibus, maiores ut minima officiis, deleniti optio, soluta totam iste quae ratione.</abbr>
+                    </blockquote>
+                </div>
+            </div>
+            <!--<pre>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus error temporibus optio harum eos corporis illo in ea vero,
+                eum repellendus iusto necessitatibus adipisci laborum debitis
+                ab beatae praesentium dolor.
+            </pre>-->
+        </section>
+
+
+        <!-- Секция с ссылками -->
+        <section id="links_sec">
+            <a href="https://ya.ru/">
+                <h4>Ссылка на Яндекс</h4>
+            </a>
+            <a href="tel:89101234567">
+                <h4>Ссылка на номер</h4>
+            </a>
+            <a href="mailto:testmail@gmail.com">
+                <h4>Ссылка на почту</h4>
+            </a>
+        </section>
+
+        <!-- Секция со списками -->
+        <section id="lists_sec">
+            <ol type="I" start="3">
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+                <li>Пункт 3</li>
+                <li>Пункт 4</li>
+                <ul type="square">
+                    <li>Маркированный 1</li>
+                    <li>Маркированный 2</li>
+                    <li>Маркированный 3</li>
+                    <li>Маркированный 4</li>
+                </ul>
+            </ol>
+            <dl>
+                <dt>Термин 1</dt>
+                <dd>Описание термина 1</dd>
+                <dt>Термин 2</dt>
+                <dd>Описание термина 2</dd>
+                <dd>Альтернативное описание термина 2</dd>
+                <dt>Термин 3</dt>
+                <dd>Описание термина 3</dd>
+                <dt>Термин 4</dt>
+                <dd>Описание термина 4</dd>
+                <dd>Альтернативное описание термина 4</dd>
+                <dt>Термин 5</dt>
+                <dd>Описание термина 5</dd>
+            </dl>
+        </section>
+        <article>
+            <h3>Наш продукт</h3>
+            <p>Общая информация о нашем продукте</p>
+            <section>
+                <p>Описание нашего продукта №1</p>
+            </section>
+            <section>
+                <p>Описание нашего продукта №2</p>
+            </section>
+            <section>
+                <p>Описание нашего продукта №3</p>
+            </section>
+            <aside>
+                <p>Отзывы от нашем продукте</p>
+            </aside>
+            <aside>
+                <p>Мнение журналистов о продукте</p>
+            </aside>
+        </article>
+
+
+        <!-- Секция с картинками -->
+        <section id="pics_sec">
+            <img style="float: left;" src="https://www.pngall.com/wp-content/uploads/5/Hello-PNG-Image.png" alt="Hello!" width="150px">
+            <p style="width: 30%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, beatae atque eius totam, iusto doloribus ab aliquid, quisquam harum consequuntur incidunt rem laudantium exercitationem a? Nesciunt atque nostrum, accusamus voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis optio possimus minus fugit at, ex atque necessitatibus vero saepe reiciendis tempora voluptatibus ea expedita perspiciatis velit omnis quisquam corporis rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consequuntur molestiae velit blanditiis amet doloremque, aspernatur nisi quae, consequatur debitis molestias corporis ducimus illum deserunt quo error ea beatae dicta.</p>
+            <div style="width: 30%;">
+                <a href="https://ya.ru/">
+                    <img style="float: right;" src="../images/adwaita-day.jpg" alt="Kali image" height="150px;">
+                </a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum unde consequatur fuga eaque non quia, harum modi nam hic nesciunt, optio obcaecati incidunt, dignissimos temporibus fugit quaerat doloribus cumque animi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, rem nisi totam, provident accusamus est? Deleniti sint, itaque, facere nostrum id, asperiores delectus ipsum reprehenderit explicabo voluptatum deserunt est quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid obcaecati voluptates nemo a consectetur distinctio quod odio ipsa iure, quis. Molestias fugit natus ea nam libero nihil assumenda atque voluptatum.</p>
+            </div>
+            <img src="../images/map_link.png" usemap="#map_img" width="250px;" height="150px;">
+            <map name="map_img">
+                <area shape="rect" coords="0, 0, 100, 150" href="https://www.color-hex.com/color/ffbf97">
+                <area shape="circle" coords="150, 75, 25" href="https://www.color-hex.com/color/97ffbf">
+                <area shape="poly" coords="170, 13, 217, 7, 239, 34, 216, 65, 185, 51, 170, 13" href="https://www.color-hex.com/color/bf97ff">
+            </map>
+        </section>
+    </main>
+    <footer id="contacts">
+        <p class="footer_slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium repellat ipsam exercitationem vel eligendi totam saepe, optio quia laborum sit dignissimos perferendis.</p>
+        <address class="social_media">
+            <a href="https://www.facebook.com/">
+                <img src="../images/facebook.png" alt="" width="40px">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="../images/instagram.png" alt="" width="40px">
+            </a>
+            <a href="https://vk.com/">
+                <img src="../images/messenger.png" alt="" width="40px">
+            </a>
+            <a href="https://web.telegram.org/k/">
+                <img src="../images/telegram.png" alt="" width="40px">
+            </a>
+            <a href="https://twitter.com/">
+                <img src="../images/twitter.png" alt="" width="40px">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="../images/youtube.png" alt="" width="40px">
+            </a>
+        </address>
+    </footer>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
+</body></html>

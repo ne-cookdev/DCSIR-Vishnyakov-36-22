@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Первая страница</title>
+    <link rel="icon" href="../images/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="body_tinter"></div>
+        <nav>
+            <section class="ham_menu">
+                <div class="ham_menu_lines"></div>
+                <div class="ham_menu_lines"></div>
+                <div class="ham_menu_lines"></div>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <!-- Приветствующая секция -->
+        <section class="welcome_section">
+            <h1>LOREM IPSUM</h1>
+            <h2>dolor sit amet</h2>
+        </section>
+        <!-- Секция с форматированным текстом -->
+        <section id="form_text_sec" class="format_text_section">
+            <div class="format_text_block">
+                <div class="format_text_inner_block" style="border-right: 1px solid #333;">
+                    <h2 style="text-align: center;">Подзаголовок уровня 2</h2>
+                    <p>Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit.</b> Ducimus <strong><i>molestias</i></strong> voluptates dignissimos quidem exercitationem similique quibusdam harum, <em>voluptas eaque placeat sunt esse sequi</em> vero odit ipsa quos voluptatem <u>iste voluptatibus.</u></p>
+                </div>
+                <div class="format_text_inner_block">
+                    <h3 style="text-align: center;">Подзаголовок уровня <sub>3</sub></h3>
+                    <p>Lorem ipsum dolor sit amet, <sup>consectetur adipisicing</sup> elit.<br> Perferendis vitae quas, accusamus <cite>incidunt, nam sequi,</cite> ducimus <span>nesciunt in temporibus eveniet officiis molestias.</span> Consequatur sint officiis laudantium reiciendis enim, dolores! Dolor.</p>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sequi sunt officiis doloribus, inventore eius quisquam velit! <abbr title="Lorem ipsum dolor sit amet">Aperiam necessitatibus, maiores ut minima officiis, deleniti optio, soluta totam iste quae ratione.</abbr>
+                    </blockquote>
+                </div>
+            </div>
+            <!--<pre>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus error temporibus optio harum eos corporis illo in ea vero,
+                eum repellendus iusto necessitatibus adipisci laborum debitis
+                ab beatae praesentium dolor.
+            </pre>-->
+        </section>
+
+        <!-- Секция с ссылками -->
+        <section id="links_sec">
+            <a href="https://ya.ru/">
+                <h4>Ссылка на Яндекс</h4>
+            </a>
+            <a href="tel:89101234567">
+                <h4>Ссылка на номер</h4>
+            </a>
+            <a href="mailto:testmail@gmail.com">
+                <h4>Ссылка на почту</h4>
+            </a>
+        </section>
+
+        <!-- Секция со списками -->
+        <section id="lists_sec">
+            <ol type="I" start="3">
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+                <li>Пункт 3</li>
+                <li>Пункт 4</li>
+                <ul type="square">
+                    <li>Маркированный 1</li>
+                    <li>Маркированный 2</li>
+                    <li>Маркированный 3</li>
+                    <li>Маркированный 4</li>
+                </ul>
+            </ol>
+            <dl>
+                <dt>Термин 1</dt>
+                <dd>Описание термина 1</dd>
+                <dt>Термин 2</dt>
+                <dd>Описание термина 2</dd>
+                <dd>Альтернативное описание термина 2</dd>
+                <dt>Термин 3</dt>
+                <dd>Описание термина 3</dd>
+                <dt>Термин 4</dt>
+                <dd>Описание термина 4</dd>
+                <dd>Альтернативное описание термина 4</dd>
+                <dt>Термин 5</dt>
+                <dd>Описание термина 5</dd>
+            </dl>
+        </section>
+
+        <!-- Секция с картинками -->
+        <section id="pics_sec">
+            <img src="https://www.pngall.com/wp-content/uploads/5/Hello-PNG-Image.png" alt="Hello!" width="150px">
+            <a href="https://ya.ru/">
+                <img src="../images/adwaita-day.jpg" alt="Kali image" height="150px;">
+            </a>
+            <img src="../images/map_link.png" usemap="#map_img" width="250px;" height="150px;">
+            <map name="map_img">
+                <area shape="rect" coords="0, 0, 100, 150" href="https://www.color-hex.com/color/ffbf97">
+                <area shape="circle" coords="150, 75, 25" href="https://www.color-hex.com/color/97ffbf">
+                <area shape="poly" coords="170, 13, 217, 7, 239, 34, 216, 65, 185, 51, 170, 13" href="https://www.color-hex.com/color/bf97ff">
+            </map>
+
+        </section>
+
+        <!-- Секция с ссылками на заголовки -->
+        <section id="h_links_sec">
+            <a href="#main_title">Ссылка на h1</a>
+            <a href="#last_h2_title">Ссылка на последний h2 на странице</a>
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="centeredImageContainer">
+        <img id="centeredImage" src="/images/setting.png">
+    </div>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        var centeredImageContainer = $('#centeredImageContainer');
+        var centeredImage = $('#centeredImage');
+
+        centeredImageContainer.css('height', 300);
+        centeredImageContainer.css('width', 300);
+
+        centeredImage.css('height', 100);
+        centeredImage.css('height', 100);
+        centeredImage.css('position', 'absolute');
+
+        centeredImage.css('top', ($(document).height() - centeredImage.outerHeight()) / 2);
+        centeredImage.css('left', ($(document).width() - centeredImage.outerWidth()) / 2);
+
+
+        $(document).on('click', function(event) {
+            alert(`Координаты курсора: x=${event.clientX}; y=${event.clientY}`);
+        });
+    </script>
+</body></html>

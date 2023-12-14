@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПР13 З4</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        p {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            text-align: center;
+            font-size: 5em;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="dynamicContent">Old Content</p>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        function updateContent() {
+            var scrollPosition = window.scrollY;
+
+            var contentElement = $('#dynamicContent');
+
+            if (scrollPosition > 300) {
+                contentElement.text('New Content');
+            } else {
+                contentElement.text('Old Content');
+            }
+        }
+        $(window).on('scroll', updateContent);
+    </script>
+
+</body></html>

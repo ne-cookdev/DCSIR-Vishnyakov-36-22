@@ -1,0 +1,298 @@
+@media (max-width: 1600px) {
+    h1 {
+        font-size: 136px;
+    }
+
+    .cards_section {
+        flex-direction: column;
+        height: 2700px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .color_cards_section {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 1500px;
+    }
+
+    .border_cards_section {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 1500px;
+    }
+
+    .open_menu_body {
+        width: 30%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 10px;
+        grid-template-areas:
+            ". A ."
+            "B C D"
+            ". E .";
+    }
+
+    .btns_section > div {
+        width: 80%;
+    }
+
+    .video_section {
+        padding-left: 20%;
+    }
+
+    .open_menu_body > a:nth-child(1) {
+        grid-area: A;
+    }
+
+    .open_menu_body > a:nth-child(2) {
+        grid-area: B;
+    }
+
+    .open_menu_body > a:nth-child(3) {
+        grid-area: C;
+    }
+
+    .open_menu_body > a:nth-child(4) {
+        grid-area: D;
+    }
+
+    .open_menu_body > a:nth-child(5) {
+        grid-area: E;
+    }
+
+    .open_menu_body > a > img {
+        height: 40px;
+    }
+
+    .open_menu_body > a {
+        font-size: 18px;
+    }
+
+    .ham_menu {
+        transform: scale(0.8);
+    }
+
+    footer {
+        grid-template-columns: 7fr 2fr;
+    }
+
+    .gallery_wrapper {
+        grid-template-areas:
+            "A A A A A A"
+            "B B B C C C"
+            "D D D E E E"
+            "F F F F F F"
+            "G G G H H H"
+            "I I I I I I";
+        column-gap: 1.3%;
+    }
+
+    .ht-hi {
+        height: 600px;
+    }
+
+    .ht-lo {
+        height: 400px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .open_menu_body {
+        width: 45%;
+    }
+
+    .btns_section > div {
+        width: 90%;
+    }
+
+    .video_section {
+        width: 360px;
+        height: 215px;
+    }
+
+    .video_banner {
+        padding: 0 20px;
+    }
+
+    .video_banner > h3 {
+        margin: 0;
+        font-size: 1.1em;
+    }
+
+    .video_banner > p {
+        margin: 0;
+        font-size: 0.7em;
+    }
+
+    h1 {
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .welcome_section > h2 {
+        font-size: 20px;
+    }
+
+    footer {
+        grid-template-columns: 6fr 2fr;
+    }
+
+    .social_media > a > img {
+        transform: scale(0.8);
+    }
+
+    .footer_slogan {
+        font-size: 14px;
+    }
+
+    .gallery_wrapper {
+        column-gap: 1.5%;
+    }
+
+    .ht-hi {
+        height: 500px;
+    }
+
+    .ht-lo {
+        height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .open_menu_body {
+        width: 80%;
+    }
+
+    .btns_section > div {
+        flex-direction: column;
+        justify-content: center;
+        grid-row-gap: 20px;
+    }
+
+    .notification_section {
+        padding-right: 10%;
+    }
+
+    .video_section {
+        width: 300px;
+        height: 185px;
+        padding-left: 10%;
+    }
+
+    .open_menu_body > a > img {
+        height: 35px;
+    }
+
+    .open_menu_body > a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 90px;
+    }
+
+    footer {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .social_media > a > img {
+        transform: scale(0.7);
+    }
+
+    .footer_slogan {
+        font-size: 12px;
+    }
+
+    .card {
+        transform: scale(0.7);
+    }
+
+    .cards_section {
+        height: 1500px;
+    }
+
+    .form_section {
+        height: 500px;
+    }
+
+    .form_body_wrapper {
+        transform: scale(0.6);
+    }
+
+    .color_cards_section:hover .color_card {
+        transform: scale(0.7);
+    }
+
+    .color_card:nth-child(1):hover {
+        transform: scale(0.9);
+    }
+
+    .color_card:nth-child(2):hover {
+        transform: scale(0.9);
+    }
+
+    .color_card:nth-child(3):hover {
+        transform: scale(0.9);
+    }
+
+    .color_card {
+        transform: scale(0.8);
+    }
+
+    .social_media_section {
+        height: 300px;
+    }
+
+    .scl_btn {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    .notification_section {
+        padding-right: 5%;
+    }
+
+
+    .video_section {
+        width: 270px;
+        height: 165px;
+        padding-left: 5%;
+    }
+
+    .video_banner {
+        padding: 0 10px;
+        left: 0px;
+        width: 90%;
+    }
+
+    .video_banner > h3 {
+        margin: 0;
+        font-size: 1em;
+    }
+
+    .video_banner > p {
+        margin: 0;
+        font-size: 0.6em;
+    }
+
+    .card {
+        transform: scale(0.7);
+    }
+
+    .cards_section {
+        height: 2000px;
+    }
+
+    .form_section {
+        height: 400px;
+    }
+
+    .form_body_wrapper {
+        transform: scale(0.5);
+    }
+}

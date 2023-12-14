@@ -1,0 +1,266 @@
+@media (max-width: 1600px) {
+    h1 {
+        font-size: 136px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .open_menu_body {
+        width: 30%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 10px;
+        grid-template-areas:
+            ". A ."
+            "B C D"
+            ". E .";
+    }
+
+    .open_menu_body > a:nth-child(1) {
+        grid-area: A;
+    }
+
+    .open_menu_body > a:nth-child(2) {
+        grid-area: B;
+    }
+
+    .open_menu_body > a:nth-child(3) {
+        grid-area: C;
+    }
+
+    .open_menu_body > a:nth-child(4) {
+        grid-area: D;
+    }
+
+    .open_menu_body > a:nth-child(5) {
+        grid-area: E;
+    }
+
+    .open_menu_body > a > img {
+        height: 40px;
+    }
+
+    .open_menu_body > a {
+        font-size: 18px;
+    }
+
+    .ham_menu {
+        transform: scale(0.8);
+    }
+
+    .grid_section {
+        grid-template-areas:
+            "A A C C"
+            "E E B F"
+            "D D G G";
+    }
+
+    .grid_elem > img {
+        transform: scale(0.8);
+    }
+
+    .grid_elem > p {
+        font-size: 0.8em;
+    }
+
+    .grid_elem:hover img {
+        transform: scale(0.9) translateY(-15px);
+    }
+
+    .footer_content_wrapper > div > p {
+        font-size: 0.8em;
+    }
+
+    .footer_content_wrapper > div > a {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .open_menu_body {
+        width: 45%;
+    }
+
+    h1 {
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .welcome_section > h2 {
+        font-size: 20px;
+    }
+
+    .grid_elem > p {
+        font-size: 0.7em;
+    }
+
+    .footer_content_wrapper > div > h3 {
+        font-size: 0.9em;
+    }
+
+    .footer_content_wrapper > div > p {
+        font-size: 0.7em;
+    }
+
+    .footer_content_wrapper > div > a {
+        font-size: 0.7em;
+    }
+
+    .yt_ic {
+        width: 40px;
+        height: 40px;
+    }
+
+    .yt_ic > img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer_content_wrapper {
+        height: 250px;
+    }
+}
+
+@media (max-width: 750px) {
+    .grid_section {
+        height: 1900px;
+    }
+
+    .inputs_wrapper {
+        grid-template-areas:
+            "A"
+            "B"
+            "C"
+            "D"
+            "E";
+    }
+
+    form {
+        height: 500px;
+    }
+
+    .footer_content_wrapper {
+        grid-template-columns: 1fr 1fr;
+        height: 550px;
+    }
+
+    .footer_content_wrapper > div > h3 {
+        font-size: 1em;
+    }
+
+    .footer_content_wrapper > div > p {
+        font-size: 0.9em;
+    }
+
+    .footer_content_wrapper > div > a {
+        font-size: 0.9em;
+    }
+
+    .yt_ic {
+        width: 50px;
+        height: 50px;
+    }
+
+    .yt_ic > img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .open_menu_body {
+        width: 80%;
+    }
+
+    .open_menu_body > a > img {
+        height: 35px;
+    }
+
+    .open_menu_body > a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 90px;
+    }
+
+    .grid_section {
+        grid-template-areas:
+            "A"
+            "C"
+            "E"
+            "B"
+            "F"
+            "D"
+            "G";
+        height: 2700px;
+    }
+
+    .grid_elem > img {
+        transform: scale(0.8);
+    }
+
+    .grid_elem > p {
+        font-size: 0.8em;
+    }
+
+    .grid_elem:hover img {
+        transform: scale(0.9) translateY(-15px);
+    }
+
+    .footer_content_wrapper {
+        grid-template-columns: 1fr;
+        height: 700px;
+    }
+
+    .footer_content_wrapper > div > h3 {
+        font-size: 0.9em;
+    }
+
+    .footer_content_wrapper > div > p {
+        font-size: 0.7em;
+    }
+
+    .footer_content_wrapper > div > a {
+        font-size: 0.7em;
+    }
+
+    .yt_ic {
+        width: 40px;
+        height: 40px;
+    }
+
+    .yt_ic > img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .copyright {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 370px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    .grid_elem > img {
+        transform: scale(0.7);
+    }
+
+    .grid_elem > p {
+        font-size: 0.7em;
+    }
+
+    .grid_elem:hover img {
+        transform: scale(0.8) translateY(-20px);
+    }
+
+    .inputs_wrapper > div > input {
+        width: 80%;
+    }
+
+    .inputs_wrapper > div > textarea {
+        width: 80%;
+    }
+}

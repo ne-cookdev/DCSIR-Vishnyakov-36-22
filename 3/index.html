@@ -1,0 +1,131 @@
+<!DOCTYPE html> <!-- Тип документа для браузера -->
+<html lang="ru">
+<!-- Самый главный тег -->
+
+<head>
+    <!-- Вся техническая информация о странице -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Для совместимости с IE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Для красивого отображения на мобильных устройствах-->
+    <title>Практическая работа №3</title> <!-- Заголовок страницы -->
+    <link rel="icon" type="image/png" href="/icons/free-icon-font-document-3914193.png"> <!-- Фавиконка -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="back_to_main">
+        <div class="logo_wrapper">
+            <a href="#back_to_main">
+                <h1>Курс HTML</h1> <!-- Заголовок первого уровня -->
+                <img src="images/512px-HTML5_Badge.png" alt="" height="50px"> <!-- Логотип -->
+            </a>
+        </div>
+        <div class="absolute_preview"></div>
+        <h2 style="margin: 0;">Содержание курса</h2> <!-- Заголовок второго уровня -->
+        <nav>
+            <ol type="I" start="1">
+                <!-- Вложенный список - маркированный в упорядоченном -->
+                <li><a href="#title1">Введение в HTML</a></li> <!-- Якорная ссылка -->
+                <li><a href="#title2">Области страницы</a></li> <!-- Якорная ссылка -->
+                <ul>
+                    <li>Header</li>
+                    <li>Body</li>
+                    <li>Footer</li>
+                </ul>
+                <li><a href="#title3">Терминология HTML</a></li> <!-- Якорная ссылка -->
+                <ul>
+                    <li>Элемент</li>
+                    <li>Тег</li>
+                    <li>Атрибут</li>
+                    <li>Скрипт</li>
+                    <li>Сайт</li>
+                </ul>
+                <li><a href="#title4">Дополнительное пособие по HTML</a></li> <!-- Якорная ссылка -->
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section>
+                <h3 id="title1">Введение в HTML</h3> <!-- Заголовок третьего уровня -->
+                <blockquote>Простота – предпосылка надежности</blockquote><cite>Эдсгер Дейкстра</cite> <!-- Цитата -->
+                <!-- Форматирование текста -->
+                <p><abbr><strong>HTML</strong></abbr> - это язык <i>разметки</i>, который представляет простые правила оформления и компактный набор структурных и семантических элементов разметки (<i>тегов</i>). HTML позволяет описывать способ представления логических частей документа (заголовки, абзацы, списки и т.д.) и создавать веб-страницы разной сложности.</p>
+                <p>Изначально язык <abbr>HTML</abbr> (<a href="https://ru.wikipedia.org/wiki/HTML">HyperText Markup Language</a>) был задуман и создан как <u>средство структурирования и форматирования документов </u>без привязки к средствам отображения. В идеале, гипертекстовый документ должен одинаково выглядеть на различных устройствах (монитор ПЭВМ, экран ПДА или мобильного телефона, принтер, медиа-проектор и т.п.).</p>
+                <p>Разработкой спецификаций языка HTML и утверждением их в качестве официальных стандартов занимается Консорциум всемирной паутины (W3C). Помимо W3C, в развитии языка участвуют IT-компании и сообщество разработчиков.</p>
+                <pre>Официальной спецификации HTML 1.0 <em>не существует</em>. До 1995 года существовало множество неофициальных спецификаций HTML, появившихся в ходе браузерных войн.
+RFC 1866 — HTML 2.0, одобренный как официальный стандарт 22 сентября 1995 года;
+HTML 3 (март 1996) - <sup>не нашла поддержки у разработчиков</sup>
+HTML 3.2 — 14 января 1997 года;
+HTML 4.0 — 18 декабря 1997 года (многие унаследованные элементы были отмечены как устаревшие и нерекомендованные к использованию (англ. deprecated).);
+HTML 4.01 — 24 декабря 1999 года (версия включала малозаметные, но существенные изменения по сравнению с предыдущей);
+ISO/IEC 15445:2000 (ISO HTML, основан на HTML 4.01 Strict) — 15 мая 2000 года.
+HTML 5 — разработан и принят W3C совместно с сообществом WHATWG.
+    </pre>
+                <aside>
+                    <p><b>HTML не является языком программирования</b>, но веб-страницы могут содержать встроенные или загружаемые программы на скриптовых языках (в первую очередь Javascript) и программы-апплеты на языке Java.</p>
+                </aside>
+            </section>
+            <section>
+                <h3 id="title2">Области страницы</h3> <!-- Заголовок третьего уровня -->
+                <!-- Изображение-карта -->
+                <img width="500px" height="500px" src="/images/screen.png" usemap="#shapes">
+                <map name="shapes">
+                    <area href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/header" shape="rectangle" coords="0, 0, 500, 70">
+                    <area href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/body" shape="circle" coords="250, 250, 180">
+                    <area href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/footer" shape="polygon" coords="0, 430, 430, 400, 500, 500, 0, 500">
+                </map>
+            </section>
+            <section class="float_section">
+                <h3>Свойство float</h3>
+                <div>
+                    <div>
+                        <img src="images/adwaita-day.jpg" alt="" width="400px" style="float: left">
+                        <p style="margin: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium dolore quisquam, nesciunt. Laboriosam perspiciatis incidunt dolorem blanditiis reiciendis nam necessitatibus, veniam quaerat maxime illo, in reprehenderit excepturi ex sunt, tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, nobis rem obcaecati adipisci recusandae, beatae cupiditate similique molestias! Vel harum odit rem porro earum placeat nihil esse beatae, mollitia molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium dolore quisquam, nesciunt. Laboriosam perspiciatis incidunt dolorem blanditiis reiciendis nam necessitatibus, veniam quaerat maxime illo, in reprehenderit excepturi ex sunt, tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, nobis rem obcaecati adipisci recusandae, beatae cupiditate similique molestias! Vel harum odit rem porro earum placeat nihil esse beatae, mollitia molestiae.</p>
+                    </div>
+                    <div>
+                        <img src="images/adwaita-morning.jpg" alt="" width="400px" style="float: right">
+                        <p style="margin: 0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad laboriosam et libero laudantium qui doloremque rerum sapiente voluptate enim sit temporibus nobis nulla optio, a nostrum reiciendis nemo, praesentium dolore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam placeat nihil quam nostrum voluptatibus amet veniam similique. Cum corrupti dolor illum neque reiciendis tempora minima, odio, repudiandae hic, obcaecati nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium dolore quisquam, nesciunt. Laboriosam perspiciatis incidunt dolorem blanditiis reiciendis nam necessitatibus, veniam quaerat maxime illo, in reprehenderit excepturi ex sunt, tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, nobis rem obcaecati adipisci recusandae, beatae cupiditate similique molestias! Vel harum odit rem porro earum placeat nihil esse beatae, mollitia molestiae.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 id="title3">Терминология HTML</h3> <!-- Заголовок третьего уровня -->
+                <!-- Список описаний -->
+                <dl>
+                    <dt> Элемент <sub>element</sub></dt>
+                    <dd> - контейнер, содержащий данные и позволяющий отформатировать их определенным образом. Любая Web-страница представляет собой набор элементов.</dd>
+                    <dt>Тег</dt>
+                    <dd> - начальный или конечный маркеры элемента. Теги определяют границы действия элементов и отделяют элементы друг от друга.</dd>
+                    <dd> - элемент языка разметки текста (HTML)</dd>
+                    <dt>Атрибут</dt>
+                    <dd> - параметр или свойство элемента.</dd>
+                    <dd> - дополнительные значения, которые настраивают элементы или регулируют их поведение различным способом, чтобы соответствовать критериям пользователей.</dd>
+                    <dd></dd>
+                    <dt>Скрипт</dt>
+                    <dd> - программа, включенная в состав Web-страницы для расширения ее возможностей.</dd>
+                    <dt>Сайт</dt>
+                    <dd> - набор Web-страниц, принадлежащих одному владельцу.</dd>
+                </dl>
+            </section>
+        </article>
+        <aside>
+            <h3 id="title4">Дополнительное пособие по HTML</h3> <!-- Заголовок третьего уровня -->
+            <!-- Изображение-ссылка -->
+            <a href="https://htmlbook.ru/samhtml">
+                <img style="background-color: maroon;" src="https://htmlbook.ru/themes/hb/img/logo.svg" alt="Логотип сайта с пособием" width="300px" height="300px">
+            </a>
+        </aside>
+    </main>
+    <footer>
+        <address>
+            <h3>Контакты</h3> <!-- Заголовок третьего уровня -->
+            <!-- Ссылка на номер телефона -->
+            <a href="tel:+79779687317">Позвонить по номеру</a>
+            <!-- Ссылка на почтовый клиент -->
+            <a href="mailto:dasha1458@yandex.ru">Написать письмо</a>
+        </address>
+    </footer>
+</body></html>

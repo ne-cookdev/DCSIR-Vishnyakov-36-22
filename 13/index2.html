@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        body {
+            font-family: Roboto;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .notification_body {
+            z-index: 2;
+            position: fixed;
+            top: 90px;
+            margin-right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background: lightgray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+            box-sizing: border-box;
+        }
+
+        .notification_body::after {
+            content: attr(data-after);
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ff0040;
+            color: #fff;
+            font-size: 0.8em;
+            top: 0;
+            right: 0;
+        }
+
+        .notification_body:hover {
+            width: 250px;
+            height: 280px;
+            border-radius: 30px;
+        }
+
+        .noty_inner-head {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            transition: 0.5s;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+        .noty_inner-head>img {
+            position: relative;
+            left: 5px;
+        }
+
+        .noty_inner-body {
+            width: 100%;
+            height: 0;
+            transition: 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+            overflow: hidden;
+        }
+
+        .noty_inner-body:hover {
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .noty_inner-body>ol {
+            padding: 0 10px;
+            list-style: decimal inside;
+            counter-reset: myCounter;
+        }
+
+        .noty_inner-body>ol>li {
+            padding: 10px;
+            color: #333;
+            border-radius: 25px;
+            list-style: none;
+            transition: 0.5s;
+            align-items: center;
+            display: flex;
+        }
+
+        .noty_inner-body>ol>li::before {
+            counter-increment: myCounter;
+            content: counter(myCounter);
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            background: #b42479;
+            color: #fff;
+            transition: 0.5s;
+        }
+
+        .noty_inner-body>ol>li:hover {
+            background: #b42479;
+            color: #fff;
+            transform: scale(1.11);
+            transition: 0.5s;
+        }
+
+        .noty_inner-body>ol>li:hover::before {
+            background: #fff;
+            color: #b42479;
+            transition: 0.5s;
+        }
+
+        .notification_body:hover .noty_inner-head {
+            background: #b42479;
+            height: 20%;
+        }
+
+        .notification_body:hover .noty_inner-body {
+            height: 80%;
+        }
+
+        .close_btn {
+            border: 0;
+            background-color: #ff0040;
+            border-radius: 10px;
+            margin-left: 120px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <main>
+        <section style="margin-top: 30px; display: flex; justify-content: flex-end;">
+            <div id="notification_body" class="notification_body">
+                <div class="noty_inner-head">
+                    <img src="images/alert_icon.png" alt="" width="40px" height="40px">
+                </div>
+                <div class="noty_inner-body">
+                    <ol id="noty_list">
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        "use strict";
+
+        let notificationBody = $('#notification_body');
+        notificationBody.attr('data-after', 0);
+        let timer = null;
+
+        function createNotification(message) {
+            const notificationList = $('#noty_list');
+
+            const notification = document.createElement('li');
+            notification.innerHTML = `${message}<button class="close_btn">&times;</button>`;
+
+            notificationList.append(notification);
+        }
+
+        function addNotification() {
+            notificationBody.attr('data-after', parseInt(notificationBody.attr('data-after')) + 1)
+            const message = `${notificationBody.attr('data-after')}`;
+
+            createNotification(message);
+
+            timer = setTimeout(addNotification, 3000);
+        }
+
+        timer = setTimeout(addNotification, 3000);
+
+        function delay(func, delayTime) {
+            return function() {
+                clearTimeout(timer);
+                timer = setTimeout(() => {
+                    func();
+                }, delayTime);
+            };
+        }
+
+        const delayedAddNotification = delay(addNotification, 10000);
+
+        notificationBody.on("mouseenter", function() {
+            delayedAddNotification();
+        });
+
+
+        notificationBody.on("click", function(event) {
+            if (event.target.classList.contains("close_btn")) {
+                notificationBody.attr('data-after', parseInt(notificationBody.attr('data-after')) - 1)
+
+                const notification = event.target.parentElement;
+                notification.parentNode.removeChild(notification);
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Первая страница</title>
+    <link rel="icon" href="../images/favicon.ico" sizes="any">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section class="ham_menu">
+                <div class="ham_menu_lines"></div>
+                <div class="ham_menu_lines"></div>
+                <div class="ham_menu_lines"></div>
+            </section>
+            <section id="open_menu_body_id" class="open_menu_body open_menu_body_closed">
+                <a href="#form_text_sec">Контент</a>
+                <a href="#lists_sec">Список</a>
+                <a href="#welcome_section_id">
+                    <img src="../images/Your%20logo.png" alt="">
+                </a>
+                <a href="#pics_sec">Картинки</a>
+                <a href="#contacts">Контакты</a>
+            </section>
+        </nav>
+        <div id="body_tinter" class="body_tint"></div>
+    </header>
+    <main>
+        <!-- Приветствующая секция -->
+        <section id="welcome_section_id" class="welcome_section">
+            <h1>LOREM IPSUM</h1>
+            <h2>dolor sit amet</h2>
+        </section>
+        <section class="btns_section">
+            <div>
+                <a href="#" class="btn_1">button</a>
+                <a href="#" class="btn_2">button</a>
+                <a href="#" class="btn_3">button</a>
+                <a href="#" class="btn_4">button</a>
+            </div>
+        </section>
+        <section class="notification_section">
+            <div class="notification_body">
+                <div class="noty_inner-head">
+                    <img src="/images/alert_icon.png" alt="" width="40px" height="40px">
+                </div>
+                <div class="noty_inner-body">
+                    <ol>
+                        <li>List item 1</li>
+                        <li>List item 2</li>
+                        <li>List item 3</li>
+                        <li>List item 4</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="card_section">
+            <div class="card_1">
+                <div>
+                    <h3>Заголовок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+            <div class="card_2">
+                <div>
+                    <h3>Заголовок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+            <div class="card_3">
+                <div>
+                    <h3>Заголовок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+        </section>
+        <section class="video_section">
+            <div class="video_container">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LXb3EKWsInQ?si=uq9XRfROUxUUAA7_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="video_banner">
+                    <h3>Заголовок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut doloribus laborum illo itaque ipsum, mollitia nesciunt quis voluptatem! Aliquam aperiam totam nostrum incidunt libero?</p>
+                </div>
+            </div>
+        </section>
+        <section class="form_section">
+            <form method="get" action="">
+                <h3>Форма</h3>
+                <label for="name_input">Ваше ФИО</label>
+                <input name="fio" required id="name_input" type="text" placeholder="Иван Иванович Иванов">
+                <label for="phone_input">Номер телефона</label>
+                <input name="number" required id="phone_input" type="tel" placeholder="+7(987)654-32-10">
+                <label for="email_input">Email</label>
+                <input name="email_name" required id="email_input" type="email" placeholder="example@gmail.com">
+                <label for="pass_input">Пароль</label>
+                <input name="pass" required id="pass_input" type="password">
+                <label class="input_file_class" for="file_input">Документы
+                    <input name="files" id="file_input" type="file">
+                    <span>Загрузить</span>
+                </label>
+                <label class="group_btns">Языки прогаммирования
+                    <label for="python">
+                        <input name="check_box" id="python" type="checkbox" value="python">
+                        Python<span>(django)</span></label>
+                    <label for="c_plus_plus">
+                        <input name="check_box" id="c_plus_plus" type="checkbox">
+                        C++<span>(Sockets)</span></label>
+                    <label for="js">
+                        <input name="check_box" id="js" type="checkbox">
+                        JS<span>(node)</span></label>
+                </label>
+                <fieldset>
+                    <legend>Курс</legend>
+                    <label for="first">
+                        <input name="radio_group" id="first" type="radio" value="1">
+                        <span>1</span></label>
+                    <label for="second">
+                        <input name="radio_group" id="second" type="radio" value="2">
+                        <span>2</span></label>
+                    <label for="third">
+                        <input name="radio_group" id="third" type="radio" value="3">
+                        <span>3</span></label>
+                </fieldset>
+                <label for="date_input">Дата</label>
+                <input name="date_name" id="date_input" type="datetime-local">
+                <label for="textarea_input">О себе</label>
+                <textarea name="rich_text" required id="textarea_input" cols="40" rows="10" maxlength="1000" placeholder="Я, студент..."></textarea>
+                <label for="trend_choose">Выберите направление</label>
+                <select name="selected_op" id="trend_choose" multiple required size="2">
+                    <option value="" disabled selected>Направления:</option>
+                    <option value="first_trend">Первое направление</option>
+                    <option value="second_trend">Второе направление</option>
+                    <option value="third_trend">Третье направление</option>
+                </select>
+                <label for="send_form">Управление формой</label>
+                <div class="form_controls">
+                    <input id="send_form" type="submit" value="Отправить форму">
+                    <button type="reset">Очистить форму</button>
+                </div>
+            </form>
+        </section>
+        <section class="gallery_wrapper">
+            <div class="photo_gallery ht-hi" style="background-image: url(../images/adwaita-day.jpg); grid-area: A;"></div>
+            <div class="photo_gallery ht-lo" style="background-image: url(../images/adwaita-morning.jpg); grid-area: B;"></div>
+            <div class="photo_gallery ht-lo" style="background-image: url(../images/adwaita-night.jpg); grid-area: C;"></div>
+            <div class="photo_gallery ht-lo" style="background-image: url(../images/Flowerbed.jpg); grid-area: D;"></div>
+            <div class="photo_gallery ht-lo" style="background-image: url(../images/Icescape.jpg); grid-area: E;"></div>
+            <div class="photo_gallery ht-hi" style="background-image: url(../images/Road.jpg);  grid-area: F;"></div>
+            <div class="photo_gallery ht-lo" style="background-image: url(../images/Sandstone.jpg); grid-area: G;"></div>
+            <div class="photo_gallery ht-lo" style="background-image: url(../images/SeaSunset.jpg); grid-area: H;"></div>
+            <div class="photo_gallery ht-hi" style="background-image: url(../images/symbolics-1.jpg);  grid-area: I;"></div>
+        </section>
+    </main>
+    <footer id="contacts">
+        <p class="footer_slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium repellat ipsam exercitationem vel eligendi totam saepe, optio quia laborum sit dignissimos perferendis.</p>
+        <address class="social_media">
+            <a href="https://www.facebook.com/">
+                <img src="../images/facebook.png" alt="" width="40px">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="../images/instagram.png" alt="" width="40px">
+            </a>
+            <a href="https://vk.com/">
+                <img src="../images/messenger.png" alt="" width="40px">
+            </a>
+            <a href="https://web.telegram.org/k/">
+                <img src="../images/telegram.png" alt="" width="40px">
+            </a>
+            <a href="https://twitter.com/">
+                <img src="../images/twitter.png" alt="" width="40px">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="../images/youtube.png" alt="" width="40px">
+            </a>
+        </address>
+    </footer>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
+</body></html>
